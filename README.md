@@ -27,17 +27,24 @@ This is a ToDo application built using React for the frontend, Django Rest Frame
 
   ## Installation
 
-### Backend Setup (Django REST Framework)
+
+cd ToDoApp
+python -m venv env
+source env/bin/activate  # On Windows use env\Scripts\activate
+pip install -r requirements.txt
 
 1. Clone the repository:
    ```bash
    git clone <repository-url>
    cd <repository-folder>
-2. Create a virtual environment (optional but recommended):
-   python -m venv env
-source env/bin/activate  # On Windows use `env\Scripts\activate`
-3. Install Python dependencies:
-   pip install -r requirements.txt
+2. Backend Setup (Django REST Framework)
+   cd ToDoApp
+python -m venv env
+source env/bin/activate  # On Windows use env\Scripts\activate
+pip install -r requirements.txt
+4. Configure the database:
+- Create a MySQL database
+- Update `backend/settings.py` with your database credentials
 4.Set up MySQL database:
 
 Create a MySQL database and note down the credentials.
